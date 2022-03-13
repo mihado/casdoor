@@ -47,8 +47,8 @@ func initBuiltInOrganization() {
 		DisplayName:   "Built-in Organization",
 		WebsiteUrl:    "https://example.com",
 		Favicon:       "https://cdn.casbin.com/static/favicon.ico",
-		PasswordType:  "plain",
-		PhonePrefix:   "86",
+		PasswordType:  "salt",
+		PhonePrefix:   "84",
 		DefaultAvatar: "https://casbin.org/img/casbin.svg",
 		Tags:          []string{},
 	}
@@ -81,7 +81,7 @@ func initBuiltInUser() {
 		IsGlobalAdmin:     true,
 		IsForbidden:       false,
 		IsDeleted:         false,
-		SignupApplication: "built-in-app",
+		SignupApplication: "app-built-in",
 		CreatedIp:         "127.0.0.1",
 		Properties:        make(map[string]string),
 	}
