@@ -71,25 +71,26 @@ type User struct {
 	LastSigninTime string `xorm:"varchar(100)" json:"lastSigninTime"`
 	LastSigninIp   string `xorm:"varchar(100)" json:"lastSigninIp"`
 
-	Github   string `xorm:"varchar(100)" json:"github"`
-	Google   string `xorm:"varchar(100)" json:"google"`
-	QQ       string `xorm:"qq varchar(100)" json:"qq"`
-	WeChat   string `xorm:"wechat varchar(100)" json:"wechat"`
 	Facebook string `xorm:"facebook varchar(100)" json:"facebook"`
-	DingTalk string `xorm:"dingtalk varchar(100)" json:"dingtalk"`
-	Weibo    string `xorm:"weibo varchar(100)" json:"weibo"`
-	Gitee    string `xorm:"gitee varchar(100)" json:"gitee"`
-	LinkedIn string `xorm:"linkedin varchar(100)" json:"linkedin"`
-	Wecom    string `xorm:"wecom varchar(100)" json:"wecom"`
-	Lark     string `xorm:"lark varchar(100)" json:"lark"`
-	Gitlab   string `xorm:"gitlab varchar(100)" json:"gitlab"`
-	Adfs     string `xorm:"adfs varchar(100)" json:"adfs"`
-	Baidu    string `xorm:"baidu varchar(100)" json:"baidu"`
-	Infoflow string `xorm:"infoflow varchar(100)" json:"infoflow"`
-	Apple    string `xorm:"apple varchar(100)" json:"apple"`
-	AzureAD  string `xorm:"azuread varchar(100)" json:"azuread"`
-	Slack    string `xorm:"slack varchar(100)" json:"slack"`
-	Steam    string `xorm:"steam varchar(100)" json:"steam"`
+	Google   string `xorm:"varchar(100)" json:"google"`
+
+	// Adfs     string `xorm:"adfs varchar(100)" json:"adfs"`
+	// Apple    string `xorm:"apple varchar(100)" json:"apple"`
+	// AzureAD  string `xorm:"azuread varchar(100)" json:"azuread"`
+	// Baidu    string `xorm:"baidu varchar(100)" json:"baidu"`
+	// DingTalk string `xorm:"dingtalk varchar(100)" json:"dingtalk"`
+	// Gitee    string `xorm:"gitee varchar(100)" json:"gitee"`
+	// Github   string `xorm:"varchar(100)" json:"github"`
+	// Gitlab   string `xorm:"gitlab varchar(100)" json:"gitlab"`
+	// Infoflow string `xorm:"infoflow varchar(100)" json:"infoflow"`
+	// Lark     string `xorm:"lark varchar(100)" json:"lark"`
+	// LinkedIn string `xorm:"linkedin varchar(100)" json:"linkedin"`
+	// QQ       string `xorm:"qq varchar(100)" json:"qq"`
+	// Slack    string `xorm:"slack varchar(100)" json:"slack"`
+	// Steam    string `xorm:"steam varchar(100)" json:"steam"`
+	// WeChat   string `xorm:"wechat varchar(100)" json:"wechat"`
+	// Wecom    string `xorm:"wecom varchar(100)" json:"wecom"`
+	// Weibo    string `xorm:"weibo varchar(100)" json:"weibo"`
 
 	Ldap       string            `xorm:"ldap varchar(100)" json:"ldap"`
 	Properties map[string]string `json:"properties"`
