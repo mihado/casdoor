@@ -21,9 +21,10 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/casdoor/casdoor/conf"
 	"github.com/casdoor/casdoor/util"
+
 	//_ "github.com/denisenkom/go-mssqldb" // db = mssql
-	_ "github.com/go-sql-driver/mysql" // db = mysql
-	//_ "github.com/lib/pq"                // db = postgres
+	// _ "github.com/go-sql-driver/mysql" // db = mysql
+	_ "github.com/lib/pq" // db = postgres
 	"xorm.io/core"
 	"xorm.io/xorm"
 )
@@ -92,6 +93,10 @@ func (a *Adapter) CreateDatabase() error {
 }
 
 func (a *Adapter) open() {
+	// TODO: fix-syncer
+	// fmt.Println("a.dataSourceName " + a.dataSourceName)
+	// fmt.Println("a.dbName " + a.dbName)
+
 	dataSourceName := a.dataSourceName + a.dbName
 	if a.driverName != "mysql" {
 		dataSourceName = a.dataSourceName

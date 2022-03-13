@@ -14,11 +14,11 @@ require (
 	github.com/go-gomail/gomail v0.0.0-20160411212932-81ebce5c23df
 	github.com/go-ldap/ldap/v3 v3.3.0
 	github.com/go-pay/gopay v1.5.72
-	github.com/go-sql-driver/mysql v1.5.0
 	github.com/golang-jwt/jwt/v4 v4.1.0
 	github.com/google/uuid v1.2.0
 	github.com/jinzhu/configor v1.2.1 // indirect
 	github.com/lestrrat-go/jwx v0.9.0
+	github.com/lib/pq v1.8.0
 	github.com/markbates/goth v1.68.1-0.20211006204042-9dc8905b41c8
 	github.com/qiangmzsx/string-adapter/v2 v2.1.0
 	github.com/qor/oss v0.0.0-20191031055114-aef9ba66bf76

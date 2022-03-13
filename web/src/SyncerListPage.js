@@ -23,6 +23,7 @@ import BaseListPage from "./BaseListPage";
 
 class SyncerListPage extends BaseListPage {
 
+  // TODO: fix-syncer
   newSyncer() {
     const randomName = Setting.getRandomName();
     return {
